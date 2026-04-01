@@ -4,14 +4,14 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDHeHHsFBU3WyHfOEVJAMlblM_2LTTp0Ps",
-  authDomain: "college-vote-hub.firebaseapp.com",
-  projectId: "college-vote-hub",
-  storageBucket: "college-vote-hub.firebasestorage.app",
-  messagingSenderId: "1010432861476",
-  appId: "1:1010432861476:web:7000e7187826967a54ffb1",
-  measurementId: "G-RY4N11HY69",
-  databaseURL: "https://college-vote-hub-default-rtdb.asia-southeast1.firebasedatabase.app"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL
 };
 
 // Initialize Firebase
